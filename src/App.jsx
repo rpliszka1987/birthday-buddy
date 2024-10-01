@@ -8,16 +8,17 @@ const App = () => {
     setPerson([])
   }
   return (
-    <div>
-      <h2>{person.length} Birthdays this Month</h2>
-      {console.log(person)}
-      {person.map((people) => {
-        return (
-          <Person person={people}/>
-        )
-      })}
-      <button type='button' className='btn' onClick={handleDataReset}>Clear List</button>
-    </div>
+    <main>
+      <section className='container'>
+        <h3>{person.length} Birthdays this Month</h3>
+        {person.map((people) => {
+          return (
+            <Person person={people}/>
+          )
+        })}
+        <button type='button' className='btn btn-block' onClick={handleDataReset}>Clear List</button>
+      </section>
+    </main>
     
   )
 };

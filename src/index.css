@@ -257,3 +257,27 @@ ul {
 
 /* optional overwrite */
 
+body {
+  background: var(--primary-100);
+}
+
+/* img in the person class */
+.person img {
+  width: 75px;
+  height: 75px;
+  /* maked image round */
+  border-radius: 50%;
+  box-shadow: var(--shadow-3);
+}
+
+*{
+  border: 2px solid red;
+}
+
+/* centers the main component */
+main {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
